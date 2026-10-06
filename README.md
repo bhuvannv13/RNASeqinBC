@@ -90,7 +90,3 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install(c("DESeq2", "clusterProfiler", "org.Hs.eg.db"))
 install.packages(c("pheatmap", "glmnet", "survival"))
 ```
-
-
-
-Feel free to update the repository link and add more details as needed. Let me know if you'd like this drafted into a file!
