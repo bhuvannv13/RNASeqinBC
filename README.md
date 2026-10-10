@@ -82,11 +82,13 @@ The following R packages are required:
 - `glmnet`
 - `survival` (for Cox regression)
 
-To install them:
+To install them, run `Rscript install.R`, which does:
 ```R
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-
-BiocManager::install(c("DESeq2", "clusterProfiler", "org.Hs.eg.db"))
-install.packages(c("pheatmap", "glmnet", "survival"))
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+BiocManager::install(c("DESeq2", "clusterProfiler", "org.Hs.eg.db"), update = FALSE, ask = FALSE)
+install.packages(c("glmnet", "pheatmap", "survival"))
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
